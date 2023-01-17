@@ -1,18 +1,14 @@
 import "./login.css";
-
 import { Link } from "react-router-dom";
 
 export default function Login() {
-
    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-
   return (
     <div className="login">
       <div
         className="loginWrapper"
         style={{
-          backgroundImage: `url(${PF + "background2.jpg"})`,
-
+          backgroundImage: `url(${PF + "backgrund.jpg"})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
@@ -20,6 +16,18 @@ export default function Login() {
         <div className="loginLeft">
           <form className="loginBox" >
             <span className="SignInName">Sign In Now.</span>
+            <div className="tabbutton">
+            <button className="loginButton" >
+            
+            "Sign In"
+          
+        </button>
+        <button className="loginButton" >
+            
+            "Sign In"
+          
+        </button>
+            </div>
             <span className="details">Enter your details below.</span>
             <input
               placeholder="Email"
@@ -54,12 +62,12 @@ export default function Login() {
             </div>
             <div className="Logodiv">
              
-              <div className="LogoName">
+              {/* <div className="LogoName">
                 <span className="loginLogo">SL GUIDER</span>
                 <span className="details">
                   Share Your Taveling Idea With Friends
                 </span>
-              </div>
+              </div> */}
             </div>
           </form>
         </div>
